@@ -17,7 +17,7 @@ import {
   ThirdText,
   ThirdBigText,
   ThirdSmallText,
-  ForthPage,
+  ForthPage,ForthImageDiv,ForthText,
   FifthDiv,
   GroupSvg,
   FifthText,
@@ -38,10 +38,16 @@ import {
   IconsText,
   Icons,
   Twitter,
-  Discord
+  Discord,
+  LaunchButton,
+  LaunchText,
+  Options
 } from "./Home.styles";
 import tetelogo from "../assets/tetelogo.svg";
-import Group from '../assets/Group.svg'
+import Group from '../assets/Group.svg';
+import man from '../assets/man.svg';
+import nft from '../assets/nft.svg';
+import peer from '../assets/peer.svg'
 
 const Home = () => {
   return (
@@ -49,56 +55,65 @@ const Home = () => {
       <Container>
         <LogoWrap>
           <Logo src={tetelogo} alt="" />
+          <LaunchButton>
+            <LaunchText>Launch App</LaunchText>
+          </LaunchButton>
         </LogoWrap>
+        
         <FirstPage>
           <FirstText>
             <BigText>Unlimited betting
-            Make more money with more betting options.
-
             </BigText>
+            <Options>Make more money with more betting options.</Options>
             <SmallText>
-              Project management software that enables your teams to
-              collaborate, plan, analyze and manage everyday tasks
+              
+            Our users can bet(stake)  their passion for sports, music, movies, and political events.
+            <p>Betting just got crazier...</p>
+              <div>NFT Betting</div>
+              <div>Peer2Peer Betting</div>
+              <div>Sports Betting</div>
+              <div>Social Betting</div>
+            
             </SmallText>
           </FirstText>
-          <FirstImageDiv>
-
-          </FirstImageDiv>
+          <FirstImageDiv src={man} alt=''/>
         </FirstPage>
         <SecondPage>
             <SecondText>
-                <SecondBigText>Project Management</SecondBigText>
-                <SecondSmallText>Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.</SecondSmallText>
+                <SecondBigText>NFT Betting</SecondBigText>
+                <SecondSmallText>Imagine you could stake on your favourite NFT collection without buying it. Amazing right? 
+ <p>On Tete, you can make money by correctly predicting the rise and fall of your favourite NFT’s collection floor price.</p></SecondSmallText>
             </SecondText>
-            <SecondImageDiv>
-
-            </SecondImageDiv>
+            <SecondImageDiv src={nft} alt=''/>
         </SecondPage>
         <ThirdPage>
-            <ThirdImageDiv>
-
-            </ThirdImageDiv>
+            <ThirdImageDiv src={peer} alt=''/>
             <ThirdText>
-                <ThirdBigText>Work together</ThirdBigText>
-                <ThirdSmallText>With whitepace, share your notes with your colleagues and collaborate on them.
-You can also publish a note to the internet and share the URL with others.
-</ThirdSmallText>
+                <ThirdBigText>Peer2Peer Betting</ThirdBigText>
+                <ThirdSmallText>We allow you to create a private betting pool for yourself and your friends. 
+                  <p>The winners take all, and the prize is shared according to the money each winner stake in the pool.</p></ThirdSmallText>
             </ThirdText>
         </ThirdPage>
         <ForthPage>
-        <SecondText>
-                <SecondBigText>Customise it to your needs</SecondBigText>
-                <SecondSmallText>Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.</SecondSmallText>
-            </SecondText>
-            <SecondImageDiv>
+        <ForthText>
+                <SecondBigText>Sport Betting</SecondBigText>
+                <SecondSmallText>Stake on your favourite sports and win by correctly predicting the outcome of the matches. 
+                  <p>Predict who will score, what half, number of fouls. Your options are unlimited...</p>
+                  <p>It gets crazier!!</p>
+                </SecondSmallText>
+            </ForthText>
+            <ForthImageDiv>
                 
-            </SecondImageDiv>
+            </ForthImageDiv>
         </ForthPage>
         <FifthDiv>
             <GroupSvg src={Group} alt='' />
             <FifthText>
-                <FifthBigText>Your work, everywhere you are</FifthBigText>
-                <FifthSmallText>Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!</FifthSmallText>
+                <FifthBigText>With our Social Betting...</FifthBigText>
+                <FifthSmallText>
+You can stake on popular music awards, movies, election results, technology updates, stock prices, and lots more. 
+<p>Our goal is to help you make money from your passion. We are launching soon.!</p>
+<p>If you have passion for it, bet on it!</p></FifthSmallText>
             </FifthText>
         </FifthDiv>
         <SixthDiv>
