@@ -4,87 +4,119 @@ export const Container = styled.div`
 // background: #fffff;
 `;
 export const LogoWrap = styled.div`
-width: 90px;
-height: 70px;
 background: #043873;
-margin: 35px 0 0 55.5px;
+padding: 25px 0 15px 70.5px;
+display: flex;
+justify-content: space-between;
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  width: 100%;
+} 
+`;
+export const LaunchButton = styled.button`
+width: 165px;
+height: 58px;
+background: #4F9CF9;
+border-radius: 8px;
+border: 1px solid #4F9CF9;
+cursor: pointer;
+margin-right: 9%;
+`;
+export const LaunchText = styled.div`
+color: #FFFFFF;
+text-align: center;
+font-weight: 500;
+font-size: 20px;
+&:hover {
+  color: #043873;
+}
 `;
 export const Logo = styled.img`
 width: 90px;
 height: 70px;
 `;
 export const FirstPage = styled.div`
-margin-top: 29px;
+// margin-top: 29px;
 // border: 1px solid #043873;
-height: 719px;
+height: 730px;
 display: flex;
+justify-content: center;
+// align-items: center;
 `;
 export const FirstText = styled.div`
-margin: 150px 0 0 175px;
+margin-top: 10%;
 color: #4F9CF9;
 `;
 export const BigText = styled.div`
-font-size: 64px;
+font-size: 68px;
 font-weight: 700;
 // line-height: 77.45px;
 width: 656px;
 // height: 154px;
 
 `;
+export const Options = styled.div`
+font-size: 30px;
+font-weight: 500;
+margin-top: 15px;
+`;
+ 
 export const SmallText = styled.div`
 margin-top: 24px;
-font-size: 18px;
+font-size: 24px;
 font-weight: 400;
-line-height: 30px;
+line-height: 35px;
 width: 656px;
 height: 60px;
 
 `;
-export const FirstImageDiv = styled.div`
-margin-top: 120px;
-height: 449px;
+export const FirstImageDiv = styled.img`
+height: 547px;
 width: 724px;
-background: #C4DEFD;
-
+margin-top: 6%;
+border-radius: 20px;
 `;
 export const SecondPage = styled.div`
-// border: 1px solid red;
 height: 547px;
 display: flex;
+justify-content: center;
 `;
 export const SecondText = styled.div`
 color: #212529;
-margin: 0 60px 0 175px;
 `;
 export const SecondBigText = styled.div`
-margin-top: 70px;
+// margin-top: 70px;
 font-size: 72px;
 font-weight: 700;
-line-height: 87.14px;
+// line-height: 87.14px;
 width: 672px;
-height: 174px;
+margin-top: 12%;
+// height: 174px;
 `;
 export const SecondSmallText = styled.div`
 width: 672px;
 height: 90px;
-font-size: 18px;
+font-size: 27px;
 font-weight: 400;
-line-height: 30px;
+line-height: 40px;
 margin-top: 24px;
 `;
-export const SecondImageDiv = styled.div`
+export const SecondImageDiv = styled.img`
 width: 748px;
 height: 547px;
-background: #C4DEFD;
+border-radius: 15px;
 `;
 export const ThirdPage = styled.div`
-margin: 100px 0 0 175px;
+// margin: 100px 0 0 175px;
+margin-top: 100px;
 display: flex;
+justify-content: center;
+// align-items: center;
 `;
-export const ThirdImageDiv = styled.div`
+export const ThirdImageDiv = styled.img`
 width: 661px;
 height: 561px;
-background: #C4DEFD;
+border-radius: 15px;
 `;
 export const ThirdText = styled.div`
 color: #212529;
@@ -97,19 +129,31 @@ font-weight: 700;
 line-height: 87.14px;
 width: 670px;
 height: 87px;
-margin-top: 183px;
+margin-top: 15%;
 `;
 export const ThirdSmallText = styled.div`
+font-size: 27px;
 font-weight: 400;
-font-size: 18px;
-line-height: 30px;
+line-height: 40px;
 width: 670px;
 height: 60px;
+margin-top: 24px;
 `;
 export const ForthPage = styled.div`
 margin-top: 140px;
 height: 479px;
 display: flex;
+justify-content: center;
+// align-items: center;
+`;
+export const ForthText = styled.div`
+color: #212529;
+margin-right: 5%;
+`
+export const ForthImageDiv = styled.img`
+width: 661px;
+height: 561px;
+border-radius: 15px;
 `;
 export const FifthDiv = styled.div`
 margin-top: 140px;
@@ -117,6 +161,7 @@ background: #043873;
 height: 574px;
 position: relative;
 display: flex;
+
 `;
 export const GroupSvg = styled.img`
 position: absolute;
@@ -126,6 +171,10 @@ opacity: 0.3;
 `;
 export const FifthText = styled.div`
 margin-left: 428.5px;
+// display: flex;
+// justify-content: center;
+align-items: center;
+text-align: center;
 `;
 export const FifthBigText = styled.div`
 font-weight: 700;
@@ -145,9 +194,11 @@ color: #FFFFFF;
 `;
 export const SixthDiv = styled.div`
 display: flex;
+justify-content: center;
+align-items: center;
 `;
 export const SixthText = styled.div`
-margin-left: 222px;
+// margin-left: 222px;
 `;
 export const SixthBigText = styled.div`
 margin: 160px 0 24px 0;
@@ -165,11 +216,13 @@ margin-bottom: 221px;
 `;
 export const LastDiv = styled.div`
 background: #043873;
-height: 848.8px;
+height: 40%;
 `;
 export const SeventhDiv = styled.div`
 display: flex;
 margin-bottom: 90px;
+justify-content: center;
+align-items: center;
 `;
 export const SeventhImage = styled.div`
 width: 582px;
@@ -204,23 +257,26 @@ padding-top: 24.5px;
 `;
 export const IconsText = styled.div`
 color: #FFFFFF;
-font-weight: 700;
-font-size: 60px;
+font-weight: 500;
+font-size: 56px;
 
 `;
 export const Icons = styled.div`
+margin-top: 15px;
 `;
 export const Twitter = styled.a`
 color: rgb(29, 155, 240);
-font-size: 50px;
+font-size: 60px;
+margin-right: 30px;
 &:hover {
-    color: #E28F1D;
+    color: #043873;
   }
 `;
 export const Discord = styled.a`
 color: #8ab4f8;
-font-size: 70px;
+margin-left: 30px;
+font-size: 55px;
 &:hover {
-    color: #E28F1D;
+    color: #043873;
   }
 `;
