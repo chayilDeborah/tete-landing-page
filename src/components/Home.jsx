@@ -33,7 +33,7 @@ import {
   SeventhImage,
   SeventhText,
   SeventhBigText,
-  SeventhSmallText,
+  // SeventhSmallText,
   LastDiv,
   LineBreak,
   IconsDiv,

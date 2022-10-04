@@ -3,14 +3,21 @@ import styled from "styled-components";
 export const Container = styled.div`
   // background: #fffff;
 `;
+export const Pages = styled.div`
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  // display: none;
+}
+`;
 export const LogoWrap = styled.div`
   background: #043873;
   padding: 25px 0 15px 70.5px;
+  // padding: 5% 0 3% 13%;
   display: flex;
   justify-content: space-between;
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
     width: 100%;
+    padding: 25px 0 10px 0;
   }
 `;
 export const LaunchButton = styled.button`
@@ -21,6 +28,11 @@ export const LaunchButton = styled.button`
   border: 1px solid #4f9cf9;
   cursor: pointer;
   margin-right: 9%;
+
+  @media screen and (min-width: 320px) and (max-width: 576px)  {
+    width: 155px;
+  height: 48px;
+  }
 `;
 export const LaunchText = styled.div`
   color: #ffffff;
@@ -34,30 +46,60 @@ export const LaunchText = styled.div`
 export const Logo = styled.img`
   width: 90px;
   height: 70px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    padding-left: 10px;
+    width: 80px;
+    height: 55px;
+  }
 `;
 export const FirstPage = styled.div`
-  // margin-top: 29px;
-  // border: 1px solid #043873;
-  height: 730px;
+  border: 1px solid #043873;
   display: flex;
   justify-content: center;
   // align-items: center;
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    display: block;
+    width: 100%;
+justify-content: center;
+border: 0px solid #043873;
+  }
 `;
 export const FirstText = styled.div`
   margin-top: 10%;
   color: #4f9cf9;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    text-align: center;
+    // align-items: center;
+    order: 2
+  }
 `;
 export const BigText = styled.div`
   font-size: 68px;
   font-weight: 700;
   // line-height: 77.45px;
   width: 656px;
-  // height: 154px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    font-weight: 700;
+    font-size: 36px;
+    width: 100%;
+    line-height: 44px;
+    text-align: center;
+  }
+  
 `;
 export const Options = styled.div`
   font-size: 30px;
   font-weight: 500;
   margin-top: 15px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px)  {
+    // display: none;
+    width: 93%;
+    margin-left: 2%;
+  } 
 `;
 
 export const SmallText = styled.div`
@@ -67,17 +109,46 @@ export const SmallText = styled.div`
   line-height: 35px;
   width: 656px;
   height: 60px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    // display: none;
+    font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+width: 84%;
+margin-left: 8%;
+height: 2%;
+text-align: center;
+align-items: center;
+  }
 `;
 export const FirstImageDiv = styled.img`
   height: 547px;
   width: 724px;
   margin-top: 6%;
   border-radius: 20px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    // display: none;
+    width: 350px;
+    height: 47%;
+    order: 1;
+    align-items: center;
+    margin-left: 4%;
+    border-radius: 15px;
+  }
 `;
 export const SecondPage = styled.div`
   height: 547px;
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    // display: none;
+    display: block;
+    width: 100%;
+justify-content: center;
+  }
 `;
 export const SecondText = styled.div`
   color: #212529;
@@ -90,6 +161,13 @@ export const SecondBigText = styled.div`
   width: 672px;
   margin-top: 12%;
   // height: 174px;
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    width: 100%;
+    text-align: center;
+  }
 `;
 export const SecondSmallText = styled.div`
   width: 672px;
@@ -98,11 +176,28 @@ export const SecondSmallText = styled.div`
   font-weight: 400;
   line-height: 40px;
   margin-top: 24px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    // display: none;
+font-size: 18px;
+line-height: 30px;
+text-align: center;
+width: 93%;
+height: 1%;
+    margin-left: 4%;
+  }
 `;
 export const SecondImageDiv = styled.img`
   width: 748px;
   height: 547px;
   border-radius: 15px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    // display: none;
+    width: 350px;
+    height: 47%;
+    margin-left: 4%;
+  }
 `;
 export const ThirdPage = styled.div`
   // margin: 100px 0 0 175px;
@@ -110,15 +205,32 @@ export const ThirdPage = styled.div`
   display: flex;
   justify-content: center;
   // align-items: center;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    // display: none;
+    display: block;
+    width: 100%;
+justify-content: center;
+  }
 `;
 export const ThirdImageDiv = styled.img`
   width: 661px;
   height: 561px;
   border-radius: 15px;
+  @media screen and (min-width: 320px) and (max-width: 576px)   {
+  width: 350px;
+    height: 5%;
+    margin-left: 4%;
+    background-size: cover;
+  }
 `;
 export const ThirdText = styled.div`
   color: #212529;
-  margin-left: 114px;
+  // margin-left: 114px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px)  {
+    // display: none;
+  }
 `;
 export const ThirdBigText = styled.div`
   font-size: 72px;
@@ -127,6 +239,15 @@ export const ThirdBigText = styled.div`
   width: 670px;
   height: 87px;
   margin-top: 15%;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    width: 100%;
+    text-align: center;
+    margin-left: 1%;
+  }
 `;
 export const ThirdSmallText = styled.div`
   font-size: 27px;
@@ -135,6 +256,17 @@ export const ThirdSmallText = styled.div`
   width: 670px;
   height: 60px;
   margin-top: 24px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    // display: none;
+font-size: 18px;
+line-height: 30px;
+text-align: center;
+width: 93%;
+height: 1%;
+    margin-left: 4%;
+    margin-top: 1%;
+  }
 `;
 export const ForthPage = styled.div`
   margin-top: 140px;
@@ -142,6 +274,13 @@ export const ForthPage = styled.div`
   display: flex;
   justify-content: center;
   // align-items: center;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    // display: none;
+    display: block;
+    width: 100%;
+justify-content: center;
+  }
 `;
 export const ForthText = styled.div`
   color: #212529;
@@ -158,6 +297,10 @@ export const FifthDiv = styled.div`
   height: 574px;
   position: relative;
   display: flex;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    display: none;
+  }
 `;
 export const GroupSvg = styled.img`
   position: absolute;
@@ -193,6 +336,10 @@ export const SixthDiv = styled.div`
   justify-content: center;
   // align-items: center;
   height: 591px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    display: none;
+  }
 `;
 export const SixthText = styled.div`
   // margin-left: 222px;
@@ -223,12 +370,17 @@ export const SixthImage = styled.img`
 export const LastDiv = styled.div`
   background: #043873;
   height: 40%;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    display: none;
+  }
 `;
 export const SeventhDiv = styled.div`
   display: flex;
   margin-bottom: 90px;
   justify-content: center;
   align-items: center;
+  
 `;
 export const SeventhImage = styled.img`
   width: 582px;
@@ -285,7 +437,6 @@ export const Discord = styled.a`
     color: #043873;
   }
 `;
-export const Pages = styled.div``;
 export const Form = styled.form`
 display: flex;
   justify-content: center;
