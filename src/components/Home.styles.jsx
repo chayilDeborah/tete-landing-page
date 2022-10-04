@@ -219,7 +219,7 @@ export const ThirdImageDiv = styled.img`
   border-radius: 15px;
   @media screen and (min-width: 320px) and (max-width: 576px)   {
   width: 350px;
-    height: 5%;
+    height: 300px;
     margin-left: 4%;
     background-size: cover;
   }
