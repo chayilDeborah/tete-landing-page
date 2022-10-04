@@ -19,7 +19,7 @@ import {
   ThirdSmallText,
   ForthPage,
   ForthImageDiv,
-  ForthText,
+  ForthText,ForthBigText,
   FifthDiv,
   GroupSvg,
   FifthText,
@@ -115,7 +115,7 @@ const Home = () => {
           </ThirdPage>
           <ForthPage>
             <ForthText>
-              <SecondBigText>Sport Betting</SecondBigText>
+              <ForthBigText>Sport Betting</ForthBigText>
               <SecondSmallText>
                 Stake on your favourite sports and win by correctly predicting
                 the outcome of the matches.
@@ -167,8 +167,12 @@ const Home = () => {
                   over 1000+ apps with Zapier to have all the tools you need for
                   your project success.
                 </SeventhSmallText> */}
-                <Form>
+                {/* <Form>
                   <Input type='email' placeholder="Input your email addresss"/>
+                  <Button type="submit">Submit</Button>
+                </Form> */}
+                <Form>
+                  <Input type="email" placeholder="Email Address"/>
                   <Button type="submit">Submit</Button>
                 </Form>
               </SeventhText>

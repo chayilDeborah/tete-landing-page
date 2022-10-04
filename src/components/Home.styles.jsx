@@ -4,9 +4,9 @@ export const Container = styled.div`
   // background: #fffff;
 `;
 export const Pages = styled.div`
-@media screen and (min-width: 320px) and (max-width: 576px) {
-  // display: none;
-}
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    // display: none;
+  }
 `;
 export const LogoWrap = styled.div`
   background: #043873;
@@ -29,9 +29,9 @@ export const LaunchButton = styled.button`
   cursor: pointer;
   margin-right: 9%;
 
-  @media screen and (min-width: 320px) and (max-width: 576px)  {
+  @media screen and (min-width: 320px) and (max-width: 576px) {
     width: 155px;
-  height: 48px;
+    height: 48px;
   }
 `;
 export const LaunchText = styled.div`
@@ -57,12 +57,12 @@ export const FirstPage = styled.div`
   border: 1px solid #043873;
   display: flex;
   justify-content: center;
-  // align-items: center;
+  align-items: center;
   @media screen and (min-width: 320px) and (max-width: 576px) {
-    display: block;
+    flex-direction: column;
     width: 100%;
-justify-content: center;
-border: 0px solid #043873;
+    justify-content: center;
+    border: 0px solid #043873;
   }
 `;
 export const FirstText = styled.div`
@@ -72,7 +72,6 @@ export const FirstText = styled.div`
   @media screen and (min-width: 320px) and (max-width: 576px) {
     text-align: center;
     // align-items: center;
-    order: 2
   }
 `;
 export const BigText = styled.div`
@@ -88,18 +87,17 @@ export const BigText = styled.div`
     line-height: 44px;
     text-align: center;
   }
-  
 `;
 export const Options = styled.div`
   font-size: 30px;
   font-weight: 500;
   margin-top: 15px;
 
-  @media screen and (min-width: 320px) and (max-width: 576px)  {
+  @media screen and (min-width: 320px) and (max-width: 576px) {
     // display: none;
     width: 93%;
     margin-left: 2%;
-  } 
+  }
 `;
 
 export const SmallText = styled.div`
@@ -113,13 +111,13 @@ export const SmallText = styled.div`
   @media screen and (min-width: 320px) and (max-width: 576px) {
     // display: none;
     font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-width: 84%;
-margin-left: 8%;
-height: 2%;
-text-align: center;
-align-items: center;
+    font-size: 18px;
+    line-height: 30px;
+    width: 84%;
+    margin-left: 8%;
+    height: 2%;
+    text-align: center;
+    align-items: center;
   }
 `;
 export const FirstImageDiv = styled.img`
@@ -129,13 +127,12 @@ export const FirstImageDiv = styled.img`
   border-radius: 20px;
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
-    // display: none;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 47%;
-    order: 1;
     align-items: center;
-    margin-left: 4%;
-    border-radius: 15px;
+    // margin-left: 4%;
+    border-radius: 8px;
   }
 `;
 export const SecondPage = styled.div`
@@ -145,9 +142,10 @@ export const SecondPage = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
     // display: none;
-    display: block;
+    flex-direction: column;
     width: 100%;
-justify-content: center;
+    justify-content: center;
+    align-items: center;
   }
 `;
 export const SecondText = styled.div`
@@ -167,6 +165,7 @@ export const SecondBigText = styled.div`
     line-height: 44px;
     width: 100%;
     text-align: center;
+    margin-top: 33%;
   }
 `;
 export const SecondSmallText = styled.div`
@@ -179,11 +178,11 @@ export const SecondSmallText = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
     // display: none;
-font-size: 18px;
-line-height: 30px;
-text-align: center;
-width: 93%;
-height: 1%;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    width: 93%;
+    height: 1%;
     margin-left: 4%;
   }
 `;
@@ -194,9 +193,10 @@ export const SecondImageDiv = styled.img`
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
     // display: none;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 47%;
-    margin-left: 4%;
+    margin-top: 8;
   }
 `;
 export const ThirdPage = styled.div`
@@ -208,28 +208,32 @@ export const ThirdPage = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
     // display: none;
-    display: block;
+    flex-direction: column;
     width: 100%;
-justify-content: center;
+    justify-content: center;
+    align-items: center;
   }
 `;
 export const ThirdImageDiv = styled.img`
   width: 661px;
   height: 561px;
   border-radius: 15px;
-  @media screen and (min-width: 320px) and (max-width: 576px)   {
-  width: 350px;
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    width: 100%;
+    max-width: 350px;
     height: 300px;
-    margin-left: 4%;
+    // margin-left: 4%;
     background-size: cover;
+    order: 2;
   }
 `;
 export const ThirdText = styled.div`
   color: #212529;
   // margin-left: 114px;
 
-  @media screen and (min-width: 320px) and (max-width: 576px)  {
+  @media screen and (min-width: 320px) and (max-width: 576px) {
     // display: none;
+    order: 1;
   }
 `;
 export const ThirdBigText = styled.div`
@@ -245,8 +249,10 @@ export const ThirdBigText = styled.div`
     font-size: 36px;
     line-height: 44px;
     width: 98%;
+    height: 60px;
     text-align: center;
     margin-left: 1%;
+    margin-top: 1%;
   }
 `;
 export const ThirdSmallText = styled.div`
@@ -259,33 +265,51 @@ export const ThirdSmallText = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
     // display: none;
-font-size: 18px;
-line-height: 30px;
-text-align: center;
-width: 93%;
-height: 1%;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    width: 93%;
+    height: 1%;
     margin-left: 4%;
     margin-top: 1%;
   }
 `;
 export const ForthPage = styled.div`
   margin-top: 140px;
-  height: 479px;
+  // height: 479px;
   display: flex;
   justify-content: center;
   // align-items: center;
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
     // display: none;
-    display: block;
+    flex-direction: column;
     width: 100%;
-justify-content: center;
-margin-top: 1%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
   }
 `;
 export const ForthText = styled.div`
   color: #212529;
-  margin-right: 5%;
+  // margin-right: 5%;
+`;
+export const ForthBigText = styled.div`
+  // margin-top: 70px;
+  font-size: 72px;
+  font-weight: 700;
+  // line-height: 87.14px;
+  width: 672px;
+  margin-top: 12%;
+  // height: 174px;
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    width: 100%;
+    text-align: center;
+    margin-top: 14%;
+  }
 `;
 export const ForthImageDiv = styled.img`
   width: 661px;
@@ -293,25 +317,25 @@ export const ForthImageDiv = styled.img`
   border-radius: 15px;
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
-    // display: none;
-    width: 350px;
-    height: 58%;
-    margin-left: 4%;
+    width: 100%;
+    max-width: 350px;
+    max-height: 350px;
+    margin-top: 5%;
   }
 `;
 export const FifthDiv = styled.div`
   margin-top: 140px;
   background: #043873;
   height: 574px;
-  // position: relative;
+  position: relative;
   // display: flex;
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
     // display: none;
-    display: block;
+    flex-direction: column;
     width: 100%;
     height: 510px;
-    margin-top: 215px;
+    margin-top: -30px;
   }
 `;
 export const GroupSvg = styled.img`
@@ -325,15 +349,16 @@ export const GroupSvg = styled.img`
   }
 `;
 export const FifthText = styled.div`
-  // margin-left: 428.5px;
+  margin-left: 428.5px;
   // display: flex;
   // justify-content: center;
   align-items: center;
   text-align: center;
-  
+
   @media screen and (min-width: 320px) and (max-width: 576px) {
-   text-align: inherit;
-   padding-left: 16px;
+    text-align: inherit;
+    padding-left: 16px;
+    margin-left: 0.5px;
   }
 `;
 export const FifthBigText = styled.div`
@@ -348,11 +373,10 @@ export const FifthBigText = styled.div`
     width: 288px;
     height: 115px;
     padding-top: 80px;
-font-size: 36px;
-line-height: 44px;
-margin-bottom: 1px;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 1px;
   }
-
 `;
 export const FifthSmallText = styled.div`
   width: 1064px;
@@ -365,7 +389,7 @@ export const FifthSmallText = styled.div`
   @media screen and (min-width: 320px) and (max-width: 576px) {
     // display: none;
     width: 288px;
-height: 240px;
+    height: 240px;
   }
 `;
 export const SixthDiv = styled.div`
@@ -375,17 +399,18 @@ export const SixthDiv = styled.div`
   height: 591px;
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
-    // display: none;
-    display: block;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
+    align-items: center;
   }
 `;
 export const SixthText = styled.div`
   // margin-left: 222px;
   // height: 381.13px;;
 
-  @media screen and (min-width: 320px) and (max-width: 576px)  {
-    width: 100%
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    width: 100%;
   }
 `;
 export const SixthBigText = styled.div`
@@ -397,13 +422,13 @@ export const SixthBigText = styled.div`
   color: #4f9cf9;
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
-  width: 288px;
-  font-size: 36px;
-  line-height: 44px;
-  margin-top: 60px;
-  width: 93%;
-  text-align: left;
-  margin-left: 16px;
+    width: 288px;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 3px 0 0 0;
+    width: 93%;
+    // text-align: left;
+    margin-left: 16px;
   }
 `;
 export const SixthSmallText = styled.div`
@@ -421,18 +446,18 @@ export const SixthImage = styled.img`
   margin-top: 5%;
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
-    // display: none;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 58%;
-    margin-left: 4%
+    // margin-left: 4%
   }
 `;
 export const LastDiv = styled.div`
   background: #043873;
-  height: 40%;
+  // height: 40%;
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
-    display: none;
+    // display: none;
   }
 `;
 export const SeventhDiv = styled.div`
@@ -440,16 +465,32 @@ export const SeventhDiv = styled.div`
   margin-bottom: 90px;
   justify-content: center;
   align-items: center;
-  
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    // justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    // align-items: center;
+  }
 `;
 export const SeventhImage = styled.img`
   width: 582px;
   height: 470.8px;
   margin: 140px 100px 0 220px;
   border-radius: 15px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    order: 2;
+    display: none;
+  }
 `;
 export const SeventhText = styled.div`
   width: 798px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    order: 1;
+    width: 100%;
+  }
 `;
 export const SeventhBigText = styled.div`
   font-weight: 700;
@@ -458,6 +499,15 @@ export const SeventhBigText = styled.div`
   margin: 141.4px 0 24px 0;
   color: #ffffff;
   height: 161px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    font-size: 36px;
+    line-height: 44px;
+    width: 288px;
+    // width: 100%;
+    padding: 80px 0 0 16px;
+    margin: 0 0 0 0;
+  }
 `;
 export const SeventhSmallText = styled.div`
   font-weight: 400;
@@ -472,11 +522,23 @@ export const LineBreak = styled.hr`
 export const IconsDiv = styled.div`
   text-align: center;
   padding-top: 24.5px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    // display: none;
+  }
 `;
 export const IconsText = styled.div`
   color: #ffffff;
   font-weight: 500;
   font-size: 56px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+font-size: 36px;
+line-height: 44px;
+width: 288px;
+width: 100%;
+  }
+ 
 `;
 export const Icons = styled.div`
   margin-top: 15px;
@@ -497,22 +559,32 @@ export const Discord = styled.a`
     color: #043873;
   }
 `;
-export const Form = styled.form`
-display: flex;
-  justify-content: center;
-  // align-items: center;
- 
+export const Form = styled.div`
+  background-color: #6699cc;
+  padding: 10px;
+  width: 80%;
+  border-radius: 5px;
 
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    // display: none;
+    margin-left: 7%;
+    // width: 100%;
+    // max-width: 250px;
+  }
 `;
 export const Input = styled.input`
-width: 100%;
-max-width: 250px;
-padding: 15px 20px;
-border-radius: 25px;
-border: 3px #4f9cf9 solid;
+  padding: 15px 20px;
+  background-color: #6699cc;
+  outline: none;
+  border: none;
+// font-size: 14px;
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+
+  }
 `;
 export const Button = styled.button`
-border-radius: 5px;
-padding: 5px 10px
-border: 3px #4f9cf9 solid;
+// // border-radius: 5px;
+padding: 15px 20px;
+border: 1px rgb(29,155,240) solid;
+background: rgb(29,155,240);
 `;
