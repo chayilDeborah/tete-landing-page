@@ -244,7 +244,7 @@ export const ThirdBigText = styled.div`
     font-weight: 700;
     font-size: 36px;
     line-height: 44px;
-    width: 100%;
+    width: 98%;
     text-align: center;
     margin-left: 1%;
   }
@@ -280,6 +280,7 @@ export const ForthPage = styled.div`
     display: block;
     width: 100%;
 justify-content: center;
+margin-top: 1%;
   }
 `;
 export const ForthText = styled.div`
@@ -290,16 +291,27 @@ export const ForthImageDiv = styled.img`
   width: 661px;
   height: 561px;
   border-radius: 15px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    // display: none;
+    width: 350px;
+    height: 58%;
+    margin-left: 4%;
+  }
 `;
 export const FifthDiv = styled.div`
   margin-top: 140px;
   background: #043873;
   height: 574px;
-  position: relative;
-  display: flex;
+  // position: relative;
+  // display: flex;
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
-    display: none;
+    // display: none;
+    display: block;
+    width: 100%;
+    height: 510px;
+    margin-top: 215px;
   }
 `;
 export const GroupSvg = styled.img`
@@ -307,13 +319,22 @@ export const GroupSvg = styled.img`
   color: #a7cefc;
   top: -175px;
   opacity: 0.3;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    display: none;
+  }
 `;
 export const FifthText = styled.div`
-  margin-left: 428.5px;
+  // margin-left: 428.5px;
   // display: flex;
   // justify-content: center;
   align-items: center;
   text-align: center;
+  
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+   text-align: inherit;
+   padding-left: 16px;
+  }
 `;
 export const FifthBigText = styled.div`
   font-weight: 700;
@@ -322,6 +343,16 @@ export const FifthBigText = styled.div`
   color: #ffffff;
   margin-top: 140px;
   margin-bottom: 24px;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    width: 288px;
+    height: 115px;
+    padding-top: 80px;
+font-size: 36px;
+line-height: 44px;
+margin-bottom: 1px;
+  }
+
 `;
 export const FifthSmallText = styled.div`
   width: 1064px;
@@ -330,6 +361,12 @@ export const FifthSmallText = styled.div`
   font-size: 18px;
   line-height: 30px;
   color: #ffffff;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    // display: none;
+    width: 288px;
+height: 240px;
+  }
 `;
 export const SixthDiv = styled.div`
   display: flex;
@@ -338,12 +375,18 @@ export const SixthDiv = styled.div`
   height: 591px;
 
   @media screen and (min-width: 320px) and (max-width: 576px) {
-    display: none;
+    // display: none;
+    display: block;
+    width: 100%;
   }
 `;
 export const SixthText = styled.div`
   // margin-left: 222px;
-  height: 381.13px;
+  // height: 381.13px;;
+
+  @media screen and (min-width: 320px) and (max-width: 576px)  {
+    width: 100%
+  }
 `;
 export const SixthBigText = styled.div`
   margin: 160px 0 24px 0;
@@ -351,7 +394,17 @@ export const SixthBigText = styled.div`
   font-size: 72px;
   line-height: 87px;
   width: 672px;
-  color: #4f9cf9
+  color: #4f9cf9;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+  width: 288px;
+  font-size: 36px;
+  line-height: 44px;
+  margin-top: 60px;
+  width: 93%;
+  text-align: left;
+  margin-left: 16px;
+  }
 `;
 export const SixthSmallText = styled.div`
   font-weight: 400;
@@ -366,6 +419,13 @@ export const SixthImage = styled.img`
   height: 461px;
   border-radius: 15px;
   margin-top: 5%;
+
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    // display: none;
+    width: 350px;
+    height: 58%;
+    margin-left: 4%
+  }
 `;
 export const LastDiv = styled.div`
   background: #043873;

@@ -139,7 +139,7 @@ const Home = () => {
                   Our goal is to help you make money from your passion. We are
                   launching soon.!
                 </p>
-                <p>If you have passion for it, bet on it!</p>
+                {/* <p>If you have passion for it, bet on it!</p> */}
               </FifthSmallText>
             </FifthText>
           </FifthDiv>
