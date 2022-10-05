@@ -77,10 +77,10 @@ const Home = () => {
                 Our users can bet(stake) their passion for sports, music,
                 movies, and political events.
                 <p>Betting just got crazier...</p>
-                <div>NFT Betting</div>
+                {/* <div>NFT Betting</div>
                 <div>Peer2Peer Betting</div>
                 <div>Sports Betting</div>
-                <div>Social Betting</div>
+                <div>Social Betting</div> */}
               </SmallText>
             </FirstText>
             <FirstImageDiv src={man} alt="" />
